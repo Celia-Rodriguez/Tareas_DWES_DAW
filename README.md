@@ -3,6 +3,11 @@ Taeras del Módulo de Entorno servidor del Grado Superior de DAW
 ## Contenidos
   - [Tarea DWES01](#DWES01)
   - [Tarea DWES02](#DWES02)
+  - [Tarea DWES03](#DWES03)
+  - [Tarea DWES04](#DWES04)
+  - [Tarea DWES05](#DWES05)
+  - [Tarea DWES06](#DWES06)
+  - [Tarea DWES07](#DWES07)
 
 
 ## DWES01
