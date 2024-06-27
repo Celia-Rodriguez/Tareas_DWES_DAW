@@ -76,7 +76,7 @@ Partiendo de la base de datos 'dwes' usada en los ejemplos y ejercicios de la un
 
    - __editar.php__. Debe mostrar los datos del producto seleccionado en la página anterior (nombre corto, nombre, descripción y PVP) dentro de un formulario que permita cambiarlos, y dos botones: "Actualizar" y "Cancelar". El formulario se enviará a la página "actualizar.php". 
 
- <img src="img_exmples/DWES03/DWES03_TAR_R02_editar_php.jpg" alt="editar.php" witdh="130">
+ <img src="img_exmples/DWES03/DWES03_TAR_R02_editar_php.jpg" alt="editar.php" witdh="110">
 
  - __actualizar.php__. Esta página simplemente redirige a la página "listado.php", pero si en el formulario anterior se ha pulsado "Actualizar" (y no "Cancelar"), antes de redirigir debe ejecutar una consulta para cambiar los datos del producto. Para redirigir se puede utilizar un formulario con un botón "Continuar" o la etiqueta "<meta http-equiv='refresh' content='1'; url=…>" dentro del encabezado. 
 
@@ -99,7 +99,17 @@ Se valorará con un punto la consecución de cada uno de los siguientes ítems:
   - Mantenimiento de la información entre las tres páginas de la tarea.
   - Utilizar excepciones para el control de los posibles errores.
   - Introducir comentarios y legibilidad del código.
- 
+
+ ## DWES03
+
+__Enunciado__
+
+Tienes que programar una aplicación web sencilla que permita gestionar una serie de preferencias del usuario. La aplicación se dividirá en dos páginas:
+
+  - __preferencias.php__. Permitirá al usuario escoger sus preferencias y las almacenará en la sesión del usuario.
+
+ <img src="img_exmples/DWES04/DWES04_TAR_R01_preferencias.jpg" alt="preferencias.php" height="1500">
+
 
  
 
