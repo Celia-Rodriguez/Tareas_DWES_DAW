@@ -214,6 +214,82 @@ A continuación utilizarás PHP8 SOAP para crear un servicio web con cuatro func
   - __getFamilias__. No recibe parámetros y devuelve un array con los códigos de todas las familias existentes.
   - __getProductosFamilia__. Recibe como parámetro el código de una familia y devuelve un array con los códigos de todos los productos de esa familia.
 
+El guion PHP que ejecute el servicio ha de llamarse servicio.php. Para comprobar la correcta ejecución del servicio, programa también un cliente con nombre cliente.php que realice una llamada a cada una de las funciones programadas y muestre el resultado obtenido.
+
+Una vez finalizada la parte anterior, crea un nuevo servicio en un guion con nombre serviciow.php, idéntico al anterior, y coméntalo adecuadamente para obtener un WSDL del mismo utilizando la herramienta WSDLDocument. Publica el documento de descripción obtenido, serviciow.wsdl, en el servicio.
+
+Partiendo de este nuevo servicio y de su descripción, utiliza la herramienta wsdl2php para obtener una clase en PHP. Crea un nuevo cliente llamado clientew.php que se base en ésta clase para probar el nuevo servicio, mostrando los resultados obtenidos de forma similar a como hiciste en el caso anterior.
+
+__Criterios de puntuación. Total 10 puntos.__
+
+Se valorará con dos puntos la consecución de cada uno de los siguientes ítems:
+  - Programar correctamente las funciones que se publicarán como parte del servicio web.
+  - Crear de forma correcta servicio.php.
+  - Comentar adecuadamente serviciow.php, para posibilitar la utilización de WSDLDocument.
+    
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
+  -Crear de forma correcta cliente.php.
+  - Crear de forma correcta clientew.php
+  - Utilizar WSDLDocument [Google Code Archive - Long-term storage for Google Code Project Hosting.](https://code.google.com/archive/p/wsdldocument/) para obtener el documento de descripción del servicio web y utilizarlo como parte del mismo.
+  - Utilizar wsdl2php para obtener una nueva clase a partir del servicio web.
+
+ ## DWES07
+
+__Enunciado__
+
+Vamos a seguir utilizando para esta tarea la base de datos correspondiente a la tienda web.
+
+  [Tienda Wweb](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124292/mod_assign/intro/DWES07/Recursos_Tarea/DWES07_TAR_R01_Tienda_web.zip) (8.53 KB)
+
+Para crear la base de datos y añadirle la información correspondiente, utiliza el guión de comandos SQL que se adjunta. Para acceder se usan las credenciales habituales: usuario "dwes" y contraseña "abc123.".
+
+  [Guión de comandos SQL](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124292/mod_assign/intro/DWES07/Recursos_Tarea/DWES07_TAR_R02_Crear_BD_tarea7.sql) (0.02 MB)
+
+ En esta ocasión, deberás modificar la aplicación para evitar que la página productos.php se recargue cada vez que se añade un nuevo producto a la cesta o ésta se vacía. El resto de funcionalidades y apariencia de la aplicación resultante deberá ser idéntico al de la aplicación original.
+
+Se deben seguir las siguientes pautas:
+ 			
+  - Se pueden modificar libremente cualquiera de los guiones PHP de la aplicación.
+  - Se debe crear un nuevo fichero, fcesta.js, para almacenar el código JavaScript necesario.
+  - Se debe crear un nuevo fichero, fcesta.php, para almacenar las funciones PHP que se ejecutarán mediante AJAX.
+  - Se recomienda utilizar la librería Xajax. Si se utiliza esta o alguna otra librería, se debe incorporar dentro de la aplicación web e incluirla como parte de la solución de la tarea.
+
+__Criterios de puntuación. Total 10 puntos.__
+
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
+ 			
+  - Incluir en productos.php el código necesario para utilizar la librería.
+  - Incluir en fcesta.php el código necesario para utilizar la librería.
+  - Adaptar en productos.php el código que vacía el contenido de la cesta.
+  - Adaptar en productos.php el código que muestra el contenido de la cesta.
+  - Adaptar en productos.php el código que añade un nuevo producto al contenido de la cesta.
+  - Programar correctamente en el fichero fcesta.js las funciones que realizan las llamadas AJAX.
+  - Programar correctamente en fcesta.php la función que vacía la cesta de la compra.
+  - Programar correctamente en fcesta.php la función que añade un nuevo producto a la cesta de la compra.
+  - Programar correctamente en fcesta.php la función que muestra la lista de productos en la cesta de la compra.
+  - Programar correctamente la funcionalidad para actualizar los productos que se muestran en la cesta de la compra en caso de que se refresque la página productos.php.
+
+__Recursos necesarios para realizar la Tarea__
+
+Ordenador con PHP, servidor web Apache, servidor de bases de datos MySQL, y entorno de desarrollo NetBeans, correctamente instalado y configurado. Extensión de depuración Xdebug para PHP instalada y funcionando con NetBeans. Navegador con acceso libre a Internet.
+Si XAJAX no funciona, puedes usar otras librerías. Una posibilidad quizá esté en AJAX en [jQuery](https://desarrolloweb.com/articulos/entendiendo-ajax-jquery.html).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
     
 
 
