@@ -72,10 +72,16 @@ Partiendo de la base de datos 'dwes' usada en los ejemplos y ejercicios de la un
 
    Para cada producto se mostrará su nombre corto y su PVP, junto a un botón con el texto "Editar" (una opción es crear un formulario distinto por cada producto). Cuando se pulse ese botón, se enviará el formulario a la página "editar.php".
 
-   <img src="img_exmples/DWES03/DWES03_TAR_R01_listado_php.jpg" alt="listado.php" height="150">
+   <img src="img_exmples/DWES03/DWES03_TAR_R01_listado_php.jpg" alt="listado.php" height="200">
 
-   
+   - __editar.php__. Debe mostrar los datos del producto seleccionado en la página anterior (nombre corto, nombre, descripción y PVP) dentro de un formulario que permita cambiarlos, y dos botones: "Actualizar" y "Cancelar". El formulario se enviará a la página "actualizar.php". 
 
+ <img src="img_exmples/DWES03/DWES03_TAR_R02_editar_php.jpg" alt="editar.php" height="200">
+
+ - __actualizar.php__. Esta página simplemente redirige a la página "listado.php", pero si en el formulario anterior se ha pulsado "Actualizar" (y no "Cancelar"), antes de redirigir debe ejecutar una consulta para cambiar los datos del producto. Para redirigir se puede utilizar un formulario con un botón "Continuar" o la etiqueta "<meta http-equiv='refresh' content='1'; url=…>" dentro del encabezado. 
+
+
+ <img src="img_exmples/DWES03/DWES03_TAR_R03_actualizar_php.jpg" alt="actualizar.php">
 
 
 
