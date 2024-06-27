@@ -76,7 +76,7 @@ Partiendo de la base de datos 'dwes' usada en los ejemplos y ejercicios de la un
 
    - __editar.php__. Debe mostrar los datos del producto seleccionado en la página anterior (nombre corto, nombre, descripción y PVP) dentro de un formulario que permita cambiarlos, y dos botones: "Actualizar" y "Cancelar". El formulario se enviará a la página "actualizar.php". 
 
- <img src="img_exmples/DWES03/DWES03_TAR_R02_editar_php.jpg" alt="editar.php" width="200">
+ <img src="img_exmples/DWES03/DWES03_TAR_R02_editar_php.jpg" alt="editar.php" width="250">
 
  - __actualizar.php__. Esta página simplemente redirige a la página "listado.php", pero si en el formulario anterior se ha pulsado "Actualizar" (y no "Cancelar"), antes de redirigir debe ejecutar una consulta para cambiar los datos del producto. Para redirigir se puede utilizar un formulario con un botón "Continuar" o la etiqueta "<meta http-equiv='refresh' content='1'; url=…>" dentro del encabezado. 
 
@@ -109,6 +109,25 @@ Tienes que programar una aplicación web sencilla que permita gestionar una seri
   - __preferencias.php__. Permitirá al usuario escoger sus preferencias y las almacenará en la sesión del usuario.
 
  <img src="img_exmples/DWES04/DWES04_TAR_R01_preferencias.jpg" alt="preferencias.php" width="200">
+
+Mostrará un cuadro desplegable por cada una de las preferencias. Estas serán:
+  - Idioma. El usuario podrá escoger un idioma entre "inglés" y "español".
+  - Perfil público. Sus posibles opciones será "sí" y "no".
+  - Zona horaria. Los valores en este caso estarán limitados a "GMT-2", "GMT-1", "GMT", "GMT+1" y "GMT+2".
+
+Además en la parte inferior tendrá un botón con el texto "Establecer preferencias" y un enlace que ponga "Mostrar preferencias".
+
+El botón almacenará las preferencias en la sesión del usuario y volverá a cargar esta misma página, en la que se mostrará el texto "Información guardada en la sesión".
+Una vez establecidas esas preferencias, deben estar seleccionadas como valores por defecto en los tres cuadros desplegables.
+
+<img src="img_exmples/DWES04/DWES04_TAR_R02_informacion_guardada.jpg" alt="preferencias.php con mensaje" width="200">
+
+El enlace llevará a la página mostrar.php.
+
+  - __mostrar.php__. Debe mostrar un texto con las preferencias que se encuentran almacenadas en la sesión del usuario. Además, en la parte inferior tendrá un botón con el texto "Borrar preferencias" y un enlace que ponga "Establecer preferencias".
+
+<img src="img_exmples/DWES04/DWES04_TAR_R03_mostrar.jpg" alt="mostrar.php" width="200">
+
 
 
  
