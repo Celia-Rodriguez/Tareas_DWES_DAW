@@ -74,6 +74,8 @@ Partiendo de la base de datos 'dwes' usada en los ejemplos y ejercicios de la un
 
    ![listado.php](img_exmples/DWES03/DWES03_TAR_R01_listado_php.jpg)
 
+   <img src="img_exmples/DWES03/DWES03_TAR_R01_listado_php.jpg" alt="listado.php" height="200">
+
    
 
 
