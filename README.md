@@ -108,7 +108,7 @@ Tienes que programar una aplicación web sencilla que permita gestionar una seri
 
   - __preferencias.php__. Permitirá al usuario escoger sus preferencias y las almacenará en la sesión del usuario.
 
- <img src="img_exmples/DWES04/DWES04_TAR_R01_preferencias.jpg" alt="preferencias.php" height="1500">
+ <img src="img_exmples/DWES04/DWES04_TAR_R01_preferencias.jpg" alt="preferencias.php" height="150">
 
 
  
