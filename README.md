@@ -108,33 +108,48 @@ Tienes que programar una aplicación web sencilla que permita gestionar una seri
 
   - __preferencias.php__. Permitirá al usuario escoger sus preferencias y las almacenará en la sesión del usuario.
 
- <img src="img_exmples/DWES04/DWES04_TAR_R01_preferencias.jpg" alt="preferencias.php" width="200">
+   <img src="img_exmples/DWES04/DWES04_TAR_R01_preferencias.jpg" alt="preferencias.php" width="200">
 
-Mostrará un cuadro desplegable por cada una de las preferencias. Estas serán:
+  Mostrará un cuadro desplegable por cada una de las preferencias. Estas serán:
   - Idioma. El usuario podrá escoger un idioma entre "inglés" y "español".
   - Perfil público. Sus posibles opciones será "sí" y "no".
   - Zona horaria. Los valores en este caso estarán limitados a "GMT-2", "GMT-1", "GMT", "GMT+1" y "GMT+2".
 
-Además en la parte inferior tendrá un botón con el texto "Establecer preferencias" y un enlace que ponga "Mostrar preferencias".
+  Además en la parte inferior tendrá un botón con el texto "Establecer preferencias" y un enlace que ponga "Mostrar preferencias".
 
-El botón almacenará las preferencias en la sesión del usuario y volverá a cargar esta misma página, en la que se mostrará el texto "Información guardada en la sesión".
-Una vez establecidas esas preferencias, deben estar seleccionadas como valores por defecto en los tres cuadros desplegables.
+  El botón almacenará las preferencias en la sesión del usuario y volverá a cargar esta misma página, en la que se mostrará el texto "Información guardada en la sesión".
+  Una vez establecidas esas preferencias, deben estar seleccionadas como valores por defecto en los tres cuadros desplegables.
 
-<img src="img_exmples/DWES04/DWES04_TAR_R02_informacion_guardada.jpg" alt="preferencias.php con mensaje" width="200">
+  <img src="img_exmples/DWES04/DWES04_TAR_R02_informacion_guardada.jpg" alt="preferencias.php con mensaje" width="200">
 
-El enlace llevará a la página mostrar.php.
+  El enlace llevará a la página mostrar.php.
 
   - __mostrar.php__. Debe mostrar un texto con las preferencias que se encuentran almacenadas en la sesión del usuario. Además, en la parte inferior tendrá un botón con el texto "Borrar preferencias" y un enlace que ponga "Establecer preferencias".
 
-<img src="img_exmples/DWES04/DWES04_TAR_R03_mostrar.jpg" alt="mostrar.php" width="200">
+  <img src="img_exmples/DWES04/DWES04_TAR_R03_mostrar.jpg" alt="mostrar.php" width="200">
 
+  El botón borrará las preferencias de la sesión del usuario y volverá a cargar esta misma página, en la que se mostrará el texto "Información de la sesión eliminada". Una vez borradas esas preferencias, se debe comprobar que sus valores no se muestran  en el texto de la página.
 
+   <img src="img_exmples/DWES04/DWES04_TAR_R04_informacion_eliminada.jpg" alt="mostrar.php con mensaje" width="200">
 
- 
+  El enlace llevará a la página preferencias.php.
+  Se adjunta una hoja de estilos para usar en las páginas que se programen.
+  [Hoja de estilo](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124289/mod_assign/intro/DWES04/DWES04_RecursosTarea/DWES04_TAR_R05_tarea.zip) (2.00 KB)
 
+__Criterios de puntuación. Total 10 puntos.__
 
+Se valorará con dos puntos la consecución de cada uno de los siguientes ítems:
 
+  - En preferencias.php, recoger los valores enviados por el formulario y almacenarlos en la sesión del usuario.
+  - En mostrar.php, mostrar las preferencias del usuario según figuran en los valores de la sesión.
+    
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
 
-
+  - En preferencias.php, establecer las preferencias seleccionadas por el usuario como valores por defecto en los cuadros de selección.
+  - En mostrar.php, eliminar las preferencias almacenadas en la sesión del usuario cuando se indica.
+  - Realizar las dos páginas con los elementos HTML indicados, incluyendo etiquetas, formularios, cuadros de selección, botones y enlaces.
+  - Vincular los elementos de cada una de las páginas con los estilos que se adjuntan en la hoja tarea.css.
+  - Iniciar y restablecer correctamente las sesiones en las dos páginas.
+  - Introducir comentarios y estructurar el código.
 
 
