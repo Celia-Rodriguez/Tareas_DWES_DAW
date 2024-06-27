@@ -72,11 +72,11 @@ Partiendo de la base de datos 'dwes' usada en los ejemplos y ejercicios de la un
 
    Para cada producto se mostrará su nombre corto y su PVP, junto a un botón con el texto "Editar" (una opción es crear un formulario distinto por cada producto). Cuando se pulse ese botón, se enviará el formulario a la página "editar.php".
 
-   <img src="img_exmples/DWES03/DWES03_TAR_R01_listado_php.jpg" alt="listado.php" height="150">
+   <img src="img_exmples/DWES03/DWES03_TAR_R01_listado_php.jpg" alt="listado.php" height="200">
 
    - __editar.php__. Debe mostrar los datos del producto seleccionado en la página anterior (nombre corto, nombre, descripción y PVP) dentro de un formulario que permita cambiarlos, y dos botones: "Actualizar" y "Cancelar". El formulario se enviará a la página "actualizar.php". 
 
- <img src="img_exmples/DWES03/DWES03_TAR_R02_editar_php.jpg" alt="editar.php" witdh="150">
+ <img src="img_exmples/DWES03/DWES03_TAR_R02_editar_php.jpg" alt="editar.php" width="250">
 
  - __actualizar.php__. Esta página simplemente redirige a la página "listado.php", pero si en el formulario anterior se ha pulsado "Actualizar" (y no "Cancelar"), antes de redirigir debe ejecutar una consulta para cambiar los datos del producto. Para redirigir se puede utilizar un formulario con un botón "Continuar" o la etiqueta "<meta http-equiv='refresh' content='1'; url=…>" dentro del encabezado. 
 
@@ -99,9 +99,202 @@ Se valorará con un punto la consecución de cada uno de los siguientes ítems:
   - Mantenimiento de la información entre las tres páginas de la tarea.
   - Utilizar excepciones para el control de los posibles errores.
   - Introducir comentarios y legibilidad del código.
+
+ ## DWES04
+
+__Enunciado__
+
+Tienes que programar una aplicación web sencilla que permita gestionar una serie de preferencias del usuario. La aplicación se dividirá en dos páginas:
+
+  - __preferencias.php__. Permitirá al usuario escoger sus preferencias y las almacenará en la sesión del usuario.
+
+   <img src="img_exmples/DWES04/DWES04_TAR_R01_preferencias.jpg" alt="preferencias.php" width="200">
+
+  Mostrará un cuadro desplegable por cada una de las preferencias. Estas serán:
+  - Idioma. El usuario podrá escoger un idioma entre "inglés" y "español".
+  - Perfil público. Sus posibles opciones será "sí" y "no".
+  - Zona horaria. Los valores en este caso estarán limitados a "GMT-2", "GMT-1", "GMT", "GMT+1" y "GMT+2".
+
+  Además en la parte inferior tendrá un botón con el texto "Establecer preferencias" y un enlace que ponga "Mostrar preferencias".
+
+  El botón almacenará las preferencias en la sesión del usuario y volverá a cargar esta misma página, en la que se mostrará el texto "Información guardada en la sesión".
+  Una vez establecidas esas preferencias, deben estar seleccionadas como valores por defecto en los tres cuadros desplegables.
+
+  <img src="img_exmples/DWES04/DWES04_TAR_R02_informacion_guardada.jpg" alt="preferencias.php con mensaje" width="200">
+
+  El enlace llevará a la página mostrar.php.
+
+  - __mostrar.php__. Debe mostrar un texto con las preferencias que se encuentran almacenadas en la sesión del usuario. Además, en la parte inferior tendrá un botón con el texto "Borrar preferencias" y un enlace que ponga "Establecer preferencias".
+
+  <img src="img_exmples/DWES04/DWES04_TAR_R03_mostrar.jpg" alt="mostrar.php" width="200">
+
+  El botón borrará las preferencias de la sesión del usuario y volverá a cargar esta misma página, en la que se mostrará el texto "Información de la sesión eliminada". Una vez borradas esas preferencias, se debe comprobar que sus valores no se muestran  en el texto de la página.
+
+   <img src="img_exmples/DWES04/DWES04_TAR_R04_informacion_eliminada.jpg" alt="mostrar.php con mensaje" width="200">
+
+  El enlace llevará a la página preferencias.php.
+  Se adjunta una hoja de estilos para usar en las páginas que se programen.
+  [Hoja de estilo](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124289/mod_assign/intro/DWES04/DWES04_RecursosTarea/DWES04_TAR_R05_tarea.zip) (2.00 KB)
+
+__Criterios de puntuación. Total 10 puntos.__
+
+Se valorará con dos puntos la consecución de cada uno de los siguientes ítems:
+
+  - En preferencias.php, recoger los valores enviados por el formulario y almacenarlos en la sesión del usuario.
+  - En mostrar.php, mostrar las preferencias del usuario según figuran en los valores de la sesión.
+    
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
+
+  - En preferencias.php, establecer las preferencias seleccionadas por el usuario como valores por defecto en los cuadros de selección.
+  - En mostrar.php, eliminar las preferencias almacenadas en la sesión del usuario cuando se indica.
+  - Realizar las dos páginas con los elementos HTML indicados, incluyendo etiquetas, formularios, cuadros de selección, botones y enlaces.
+  - Vincular los elementos de cada una de las páginas con los estilos que se adjuntan en la hoja tarea.css.
+  - Iniciar y restablecer correctamente las sesiones en las dos páginas.
+  - Introducir comentarios y estructurar el código.
+
+ ## DWES05
+
+__Enunciado__
+
+En esta ocasión debes ampliar ligeramente la funcionalidad de la última versión con la que hemos trabajado de la tienda online. Se precisa mostrar a los usuarios de la tienda información más detallada sobre los productos de la misma, y se ha decidido comenzar por los ordenadores.
+
+El objetivo es crear una nueva página que muestre información sobre un modelo de ordenador. Esta información se almacenará en una nueva tabla de la base de datos. En el listado de productos, se incluirá un enlace en aquellos que sean de tipo Ordenador, para dar acceso a la nueva información.
+
+Los pasos que has de seguir son:
+
+  - Crear una base de datos de nombre "tarea5", similar a la que usamos en los ejercicios de la tienda web. Se te proporciona un guion de comandos SQL para crear su estructura y añadir los datos correspondientes. Para acceder se usan las credenciales habituales: usuario "dwes" y contraseña "abc123.".
+
+     [Guion de comandos SQL base de datos 'tarea5'](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124290/mod_assign/intro/DWES05/DWES05_RecursosTarea/DWES05_TAR_R01_Crear_BD_tarea5.zip) (9 KB)
+    
+  - Incluir la nueva tabla "ordenador" en la base de datos. También se te proporciona un guion de comandos SQL para ejecutar sobre la base de datos "tarea5" que creaste en el punto anterior; el guión crea la estructura de la nueva tabla y le añade algunos datos, correspondientes a los ordenadores existentes.
+    
+    [Guion de comandos SQL tabla 'ordenador'](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124290/mod_assign/intro/DWES05/DWES05_RecursosTarea/DWES05_TAR_R02_Crear_tabla_ordenador.zip)  (2 KB)
+
+  - Descargar, instalar y configurar el motor de plantillas [Smarty.](https://www.smarty.net/)
+  - Utilizando el código de la tienda web que se aporta, instalarla y comprobar su correcto funcionamiento.
+
+    [Código de la tienda web que se aporta](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124290/mod_assign/intro/DWES05/DWES05_RecursosTarea/DWES05_TAR_R03_Tienda_web.zip)  (9 KB)
+
+  - Sobre la tienda web, crear una nueva clase para manejar la información correspondiente a cada ordenador.
+
+  - Utilizando Smarty, crear una nueva página en PHP, con su correspondiente plantilla, para mostrar la información de un modelo de ordenador. Se debe mostrar: nombre corto, código, procesador, RAM, tarjeta gráfica, unidad óptica, otros, PVP y descripción (ten en cuenta que algunos datos están almacenados en la tabla producto). Fíjate en la imagen de la página resultante que se aporta (no es necesario que el aspecto estético resultante sea igual).
+
+    <img src="img_exmples/DWES05/DWES05_TAR_R04_Detalle_ordenador.jpg" alt="detalle ordenador" width="200">
+
+  - Modificar la página productos.php / productos.tpl para convertir los nombres de los productos de tipo ordenador en enlaces a la página anterior. Cuando el usuario pinche en uno de esos enlaces, se le abrirá la nueva página, con la información del modelo de ordenador seleccionado.
+
+    <img src="img_exmples/DWES05/DWES05_TAR_R05_Listado_productos.jpg" alt="detalle ordenador" width="200">
+
+  Se pueden realizar cuantos cambios sean necesarios en el código que se entrega, mientras se mantenga la separación entre la lógica de presentación y la lógica de negocio.
+
+__Criterios de puntuación. Total 10 puntos.__
+
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
+  - Crear la base de datos y añadir la tabla ordenador.
+  - Descargar, instalar y configurar correctamente el motor de plantillas Smarty.
+  - Poner en funcionamiento la tienda online utilizando el código que se aporta.
+  - Modificar las clases existentes para añadirles las funcionalidades necesarias.
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
+  - Crear la clase Ordenador, con los miembros que correspondan.
+  - Crear la nueva página y su plantilla, para mostrar el detalle de cada modelo de ordenador.
+  - Modificar el listado de productos para añadir los enlaces a la nueva página con el detalle de los ordenadores
+
+   ## DWES06
+
+__Enunciado__
+
+Vamos a seguir utilizando para esta tarea la base de datos correspondiente a la tienda web.
+
+En primer lugar deberás utilizar el guion de comandos SQL suministrado en el tema 3 para crear una base de datos de nombre "dwes", como la que usamos en los ejercicios anteriores. Para acceder se usan las credenciales habituales: usuario "dwes" y contraseña "abc123.".
+
+A continuación utilizarás PHP8 SOAP para crear un servicio web con cuatro funciones que expongan información de la base de datos de la tienda online. De momento no deberás utilizar WSDL. Las funciones son las siguientes:
+
+  - __getPVP__. Esta función recibirá como parámetro el código de un producto, y devolverá el PVP correspondiente al mismo.
+  - __getStock__. Esta función recibirá dos parámetros: el código de un producto y el código de una tienda. Devolverá el stock existente en dicha tienda del producto.
+  - __getFamilias__. No recibe parámetros y devuelve un array con los códigos de todas las familias existentes.
+  - __getProductosFamilia__. Recibe como parámetro el código de una familia y devuelve un array con los códigos de todos los productos de esa familia.
+
+El guion PHP que ejecute el servicio ha de llamarse servicio.php. Para comprobar la correcta ejecución del servicio, programa también un cliente con nombre cliente.php que realice una llamada a cada una de las funciones programadas y muestre el resultado obtenido.
+
+Una vez finalizada la parte anterior, crea un nuevo servicio en un guion con nombre serviciow.php, idéntico al anterior, y coméntalo adecuadamente para obtener un WSDL del mismo utilizando la herramienta WSDLDocument. Publica el documento de descripción obtenido, serviciow.wsdl, en el servicio.
+
+Partiendo de este nuevo servicio y de su descripción, utiliza la herramienta wsdl2php para obtener una clase en PHP. Crea un nuevo cliente llamado clientew.php que se base en ésta clase para probar el nuevo servicio, mostrando los resultados obtenidos de forma similar a como hiciste en el caso anterior.
+
+__Criterios de puntuación. Total 10 puntos.__
+
+Se valorará con dos puntos la consecución de cada uno de los siguientes ítems:
+  - Programar correctamente las funciones que se publicarán como parte del servicio web.
+  - Crear de forma correcta servicio.php.
+  - Comentar adecuadamente serviciow.php, para posibilitar la utilización de WSDLDocument.
+    
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
+  -Crear de forma correcta cliente.php.
+  - Crear de forma correcta clientew.php
+  - Utilizar WSDLDocument [Google Code Archive - Long-term storage for Google Code Project Hosting.](https://code.google.com/archive/p/wsdldocument/) para obtener el documento de descripción del servicio web y utilizarlo como parte del mismo.
+  - Utilizar wsdl2php para obtener una nueva clase a partir del servicio web.
+
+ ## DWES07
+
+__Enunciado__
+
+Vamos a seguir utilizando para esta tarea la base de datos correspondiente a la tienda web.
+
+  [Tienda Wweb](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124292/mod_assign/intro/DWES07/Recursos_Tarea/DWES07_TAR_R01_Tienda_web.zip) (8.53 KB)
+
+Para crear la base de datos y añadirle la información correspondiente, utiliza el guión de comandos SQL que se adjunta. Para acceder se usan las credenciales habituales: usuario "dwes" y contraseña "abc123.".
+
+  [Guión de comandos SQL](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124292/mod_assign/intro/DWES07/Recursos_Tarea/DWES07_TAR_R02_Crear_BD_tarea7.sql) (0.02 MB)
+
+ En esta ocasión, deberás modificar la aplicación para evitar que la página productos.php se recargue cada vez que se añade un nuevo producto a la cesta o ésta se vacía. El resto de funcionalidades y apariencia de la aplicación resultante deberá ser idéntico al de la aplicación original.
+
+Se deben seguir las siguientes pautas:
+ 			
+  - Se pueden modificar libremente cualquiera de los guiones PHP de la aplicación.
+  - Se debe crear un nuevo fichero, fcesta.js, para almacenar el código JavaScript necesario.
+  - Se debe crear un nuevo fichero, fcesta.php, para almacenar las funciones PHP que se ejecutarán mediante AJAX.
+  - Se recomienda utilizar la librería Xajax. Si se utiliza esta o alguna otra librería, se debe incorporar dentro de la aplicación web e incluirla como parte de la solución de la tarea.
+
+__Criterios de puntuación. Total 10 puntos.__
+
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
+ 			
+  - Incluir en productos.php el código necesario para utilizar la librería.
+  - Incluir en fcesta.php el código necesario para utilizar la librería.
+  - Adaptar en productos.php el código que vacía el contenido de la cesta.
+  - Adaptar en productos.php el código que muestra el contenido de la cesta.
+  - Adaptar en productos.php el código que añade un nuevo producto al contenido de la cesta.
+  - Programar correctamente en el fichero fcesta.js las funciones que realizan las llamadas AJAX.
+  - Programar correctamente en fcesta.php la función que vacía la cesta de la compra.
+  - Programar correctamente en fcesta.php la función que añade un nuevo producto a la cesta de la compra.
+  - Programar correctamente en fcesta.php la función que muestra la lista de productos en la cesta de la compra.
+  - Programar correctamente la funcionalidad para actualizar los productos que se muestran en la cesta de la compra en caso de que se refresque la página productos.php.
+
+__Recursos necesarios para realizar la Tarea__
+
+Ordenador con PHP, servidor web Apache, servidor de bases de datos MySQL, y entorno de desarrollo NetBeans, correctamente instalado y configurado. Extensión de depuración Xdebug para PHP instalada y funcionando con NetBeans. Navegador con acceso libre a Internet.
+Si XAJAX no funciona, puedes usar otras librerías. Una posibilidad quizá esté en AJAX en [jQuery](https://desarrolloweb.com/articulos/entendiendo-ajax-jquery.html).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
  
+    
+
+
+
+
 
 
 
