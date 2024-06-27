@@ -183,7 +183,7 @@ Los pasos que has de seguir son:
 
   - Modificar la página productos.php / productos.tpl para convertir los nombres de los productos de tipo ordenador en enlaces a la página anterior. Cuando el usuario pinche en uno de esos enlaces, se le abrirá la nueva página, con la información del modelo de ordenador seleccionado.
 
-  <img src="img_exmples/DWES05/DWES05_TAR_R05_Listado_productos.jpg" alt="detalle ordenador" width="200">
+    <img src="img_exmples/DWES05/DWES05_TAR_R05_Listado_productos.jpg" alt="detalle ordenador" width="200">
 
   Se pueden realizar cuantos cambios sean necesarios en el código que se entrega, mientras se mantenga la separación entre la lógica de presentación y la lógica de negocio.
 
@@ -199,8 +199,20 @@ Se valorará con un punto la consecución de cada uno de los siguientes ítems:
   - Crear la nueva página y su plantilla, para mostrar el detalle de cada modelo de ordenador.
   - Modificar el listado de productos para añadir los enlaces a la nueva página con el detalle de los ordenadores
 
-  
+   ## DWES06
 
+__Enunciado__
+
+Vamos a seguir utilizando para esta tarea la base de datos correspondiente a la tienda web.
+
+En primer lugar deberás utilizar el guion de comandos SQL suministrado en el tema 3 para crear una base de datos de nombre "dwes", como la que usamos en los ejercicios anteriores. Para acceder se usan las credenciales habituales: usuario "dwes" y contraseña "abc123.".
+
+A continuación utilizarás PHP8 SOAP para crear un servicio web con cuatro funciones que expongan información de la base de datos de la tienda online. De momento no deberás utilizar WSDL. Las funciones son las siguientes:
+
+  - __getPVP__. Esta función recibirá como parámetro el código de un producto, y devolverá el PVP correspondiente al mismo.
+  - __getStock__. Esta función recibirá dos parámetros: el código de un producto y el código de una tienda. Devolverá el stock existente en dicha tienda del producto.
+  - __getFamilias__. No recibe parámetros y devuelve un array con los códigos de todas las familias existentes.
+  - __getProductosFamilia__. Recibe como parámetro el código de una familia y devuelve un array con los códigos de todos los productos de esa familia.
 
     
 
