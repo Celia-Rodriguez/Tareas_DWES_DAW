@@ -72,9 +72,7 @@ Partiendo de la base de datos 'dwes' usada en los ejemplos y ejercicios de la un
 
    Para cada producto se mostrará su nombre corto y su PVP, junto a un botón con el texto "Editar" (una opción es crear un formulario distinto por cada producto). Cuando se pulse ese botón, se enviará el formulario a la página "editar.php".
 
-   ![listado.php](img_exmples/DWES03/DWES03_TAR_R01_listado_php.jpg)
-
-   <img src="img_exmples/DWES03/DWES03_TAR_R01_listado_php.jpg" alt="listado.php" height="200">
+   <img src="img_exmples/DWES03/DWES03_TAR_R01_listado_php.jpg" alt="listado.php" height="150">
 
    
 
