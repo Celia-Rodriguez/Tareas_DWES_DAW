@@ -12,7 +12,7 @@ Taeras del Módulo de Entorno servidor del Grado Superior de DAW
 
 ## DWES01
 
-Enunciado
+__Enunciado__
  
 Quieres programar una aplicación web para gestionar una lista de direcciones de correo. En una primera aproximación, tu aplicación se compondrá de tres páginas:
 
@@ -30,7 +30,8 @@ Tienes que crear un documento en el que respondas a las siguientes preguntas sob
  - ¿Qué necesitas instalar en tu ordenador para poder desarrollar la aplicación?
  - Si utilizas el lenguaje PHP para programar la aplicación, ¿cuál será el tipo de datos se utilizará para manipular cada una de las direcciones de correo?
 
-Consejos y recomendaciones
+__Consejos y recomendaciones__
+
 Incluye la pregunta que se formula antes de cada una de las respuestas.
 No respondas de forma demasiado breve. Intenta razonar y explicar de forma clara las decisiones adoptadas.
 Si consideras que existen varias respuestas posibles, indícalo y explica cuál sería la mejor opción.
