@@ -275,8 +275,7 @@ Ordenador con PHP, servidor web Apache, servidor de bases de datos MySQL, y ento
 Si XAJAX no funciona, puedes usar otras librerías. Una posibilidad quizá esté en AJAX en [jQuery](https://desarrolloweb.com/articulos/entendiendo-ajax-jquery.html).
 
 
-
-
+## Espero que os resulten útiles
 
 
 
