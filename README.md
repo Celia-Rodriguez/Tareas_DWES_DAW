@@ -168,7 +168,41 @@ Los pasos que has de seguir son:
     
   - Incluir la nueva tabla "ordenador" en la base de datos. También se te proporciona un guion de comandos SQL para ejecutar sobre la base de datos "tarea5" que creaste en el punto anterior; el guión crea la estructura de la nueva tabla y le añade algunos datos, correspondientes a los ordenadores existentes.
     
-    [ Guion de comandos SQL tabla 'ordenador'](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124290/mod_assign/intro/DWES05/DWES05_RecursosTarea/DWES05_TAR_R02_Crear_tabla_ordenador.zip)  (2 KB)
+    [Guion de comandos SQL tabla 'ordenador'](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124290/mod_assign/intro/DWES05/DWES05_RecursosTarea/DWES05_TAR_R02_Crear_tabla_ordenador.zip)  (2 KB)
+
+  - Descargar, instalar y configurar el motor de plantillas [Smarty.](https://www.smarty.net/)
+  - Utilizando el código de la tienda web que se aporta, instalarla y comprobar su correcto funcionamiento.
+
+    [Código de la tienda web que se aporta](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124290/mod_assign/intro/DWES05/DWES05_RecursosTarea/DWES05_TAR_R03_Tienda_web.zip)  (9 KB)
+
+  - Sobre la tienda web, crear una nueva clase para manejar la información correspondiente a cada ordenador.
+
+  - Utilizando Smarty, crear una nueva página en PHP, con su correspondiente plantilla, para mostrar la información de un modelo de ordenador. Se debe mostrar: nombre corto, código, procesador, RAM, tarjeta gráfica, unidad óptica, otros, PVP y descripción (ten en cuenta que algunos datos están almacenados en la tabla producto). Fíjate en la imagen de la página resultante que se aporta (no es necesario que el aspecto estético resultante sea igual).
+
+    <img src="img_exmples/DWES05/DWES05_TAR_R04_Detalle_ordenador.jpg" alt="detalle ordenador" width="200">
+
+  - Modificar la página productos.php / productos.tpl para convertir los nombres de los productos de tipo ordenador en enlaces a la página anterior. Cuando el usuario pinche en uno de esos enlaces, se le abrirá la nueva página, con la información del modelo de ordenador seleccionado.
+
+  <img src="img_exmples/DWES05/DWES05_TAR_R05_Listado_productos.jpg" alt="detalle ordenador" width="200">
+
+  Se pueden realizar cuantos cambios sean necesarios en el código que se entrega, mientras se mantenga la separación entre la lógica de presentación y la lógica de negocio.
+
+__Criterios de puntuación. Total 10 puntos.__
+
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
+  - Crear la base de datos y añadir la tabla ordenador.
+  - Descargar, instalar y configurar correctamente el motor de plantillas Smarty.
+  - Poner en funcionamiento la tienda online utilizando el código que se aporta.
+  - Modificar las clases existentes para añadirles las funcionalidades necesarias.
+Se valorará con un punto la consecución de cada uno de los siguientes ítems:
+  - Crear la clase Ordenador, con los miembros que correspondan.
+  - Crear la nueva página y su plantilla, para mostrar el detalle de cada modelo de ordenador.
+  - Modificar el listado de productos para añadir los enlaces a la nueva página con el detalle de los ordenadores
+
+  
+
+
+    
 
 
 
