@@ -1,0 +1,15 @@
+{
+    "name": "celia_rd/dwes06",
+    "description": "de wsdl a php class",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "celia rd"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {
+        "wsdl2phpgenerator/wsdl2phpgenerator": "^3.4"
+    }
+}
