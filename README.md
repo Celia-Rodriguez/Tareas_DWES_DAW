@@ -38,7 +38,7 @@ Si consideras que existen varias respuestas posibles, indícalo y explica cuál 
 
 ## DWES02
 
-Enunciado
+__Enunciado__
 
 Debes programar una aplicación para mantener una pequeña agenda en una única página web programada en PHP.
 
@@ -52,7 +52,19 @@ Cada vez que se envíe el formulario:
   - Si el nombre que se introdujo ya existe en la agenda y se indica un número de teléfono, se sustituirá el número de teléfono anterior.
   - Si el nombre que se introdujo ya existe en la agenda y no se indica número de teléfono, se eliminará de la agenda la entrada correspondiente a ese nombre.
 
+__Recursos necesarios para realizar la Tarea__
 
+Ordenador con PHP, servidor web Apache y entorno de desarrollo, correctamente instalado y configurado. 
+
+En mi caso usé XAMPP y Visual Studio Code.
+
+__Consejos y recomendaciones.__
+
+Se recomienda emplear como apoyo en el desarrollo del examen un navegador con acceso a Internet, para poder consultar el manual online de PHP.
+
+## DWES03
+
+__Enunciado__
 
 
 
