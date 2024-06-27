@@ -152,4 +152,31 @@ Se valorará con un punto la consecución de cada uno de los siguientes ítems:
   - Iniciar y restablecer correctamente las sesiones en las dos páginas.
   - Introducir comentarios y estructurar el código.
 
+ ## DWES05
+
+__Enunciado__
+
+En esta ocasión debes ampliar ligeramente la funcionalidad de la última versión con la que hemos trabajado de la tienda online. Se precisa mostrar a los usuarios de la tienda información más detallada sobre los productos de la misma, y se ha decidido comenzar por los ordenadores.
+
+El objetivo es crear una nueva página que muestre información sobre un modelo de ordenador. Esta información se almacenará en una nueva tabla de la base de datos. En el listado de productos, se incluirá un enlace en aquellos que sean de tipo Ordenador, para dar acceso a la nueva información.
+
+Los pasos que has de seguir son:
+
+  - Crear una base de datos de nombre "tarea5", similar a la que usamos en los ejercicios de la tienda web. Se te proporciona un guion de comandos SQL para crear su estructura y añadir los datos correspondientes. Para acceder se usan las credenciales habituales: usuario "dwes" y contraseña "abc123.".
+
+     [Guion de comandos SQL base de datos 'tarea5'](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124290/mod_assign/intro/DWES05/DWES05_RecursosTarea/DWES05_TAR_R01_Crear_BD_tarea5.zip) (9 KB)
+    
+  - Incluir la nueva tabla "ordenador" en la base de datos. También se te proporciona un guion de comandos SQL para ejecutar sobre la base de datos "tarea5" que creaste en el punto anterior; el guión crea la estructura de la nueva tabla y le añade algunos datos, correspondientes a los ordenadores existentes.
+    
+    [ Guion de comandos SQL tabla 'ordenador'](https://aulavirtual35.educa.madrid.org/ies.lapaloma.madrid/pluginfile.php/124290/mod_assign/intro/DWES05/DWES05_RecursosTarea/DWES05_TAR_R02_Crear_tabla_ordenador.zip)  (2 KB)
+
+
+
+
+
+
+
+
+
+
 
