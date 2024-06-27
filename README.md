@@ -1,11 +1,11 @@
 # Tareas_DWES_DAW
 Taeras del Módulo de Entorno servidor del Grado Superior de DAW
-##Contenidos
+## Contenidos
   - [Tarea DWES01] (#DWES01)
   - [Tarea DWES02] (#DWES02)
 
 
-##DWES01
+## DWES01
  Enunciado.
  
 Quieres programar una aplicación web para gestionar una lista de direcciones de correo. En una primera aproximación, tu aplicación se compondrá de tres páginas:
