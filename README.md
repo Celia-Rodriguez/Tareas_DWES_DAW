@@ -66,6 +66,15 @@ Se recomienda emplear como apoyo en el desarrollo del examen un navegador con ac
 
 __Enunciado__
 
+Partiendo de la base de datos 'dwes' usada en los ejemplos y ejercicios de la unidad, se trata de programar una aplicación que permita gestionar los registros de la tabla 'productos'. La aplicación se dividirá en tres páginas web:
+
+  - __listado.php__. Mostrara un cuadro desplegable que permita seleccionar un registro de la tabla 'familias', junto a un botón "Mostrar". Al pulsar el botón, se mostrará un listado de los productos de la familia seleccionada.
+
+   Para cada producto se mostrará su nombre corto y su PVP, junto a un botón con el texto "Editar" (una opción es crear un formulario distinto por cada producto). Cuando se pulse ese botón, se enviará el formulario a la página "editar.php".
+
+   
+
+
 
 
 
