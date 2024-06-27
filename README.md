@@ -11,7 +11,8 @@ Taeras del Módulo de Entorno servidor del Grado Superior de DAW
 
 
 ## DWES01
- Enunciado.
+
+Enunciado
  
 Quieres programar una aplicación web para gestionar una lista de direcciones de correo. En una primera aproximación, tu aplicación se compondrá de tres páginas:
 
@@ -28,6 +29,30 @@ Tienes que crear un documento en el que respondas a las siguientes preguntas sob
  - Si te decides por utilizar una arquitectura AMP para la aplicación ¿qué componentes necesitas instalar en tu servidor para ejecutar la aplicación? Indica algún producto concreto para cada componente.
  - ¿Qué necesitas instalar en tu ordenador para poder desarrollar la aplicación?
  - Si utilizas el lenguaje PHP para programar la aplicación, ¿cuál será el tipo de datos se utilizará para manipular cada una de las direcciones de correo?
+
+Consejos y recomendaciones
+Incluye la pregunta que se formula antes de cada una de las respuestas.
+No respondas de forma demasiado breve. Intenta razonar y explicar de forma clara las decisiones adoptadas.
+Si consideras que existen varias respuestas posibles, indícalo y explica cuál sería la mejor opción.
+
+## DWES02
+
+Enunciado
+
+Debes programar una aplicación para mantener una pequeña agenda en una única página web programada en PHP.
+
+La agenda almacenará únicamente dos datos de cada persona: su nombre y un número de teléfono. Además, no podrá haber nombres repetidos en la agenda.
+
+En la parte superior de la página web se mostrará el contenido de la agenda. En la parte inferior debe figurar un sencillo formulario con dos cuadros de texto, uno para el nombre y otro para el número de teléfono.
+
+Cada vez que se envíe el formulario:
+  - Si el nombre está vacío, se mostrará una advertencia.
+  - Si el nombre que se introdujo no existe en la agenda, y el número de teléfono no está vacío, se añadirá a la agenda.
+  - Si el nombre que se introdujo ya existe en la agenda y se indica un número de teléfono, se sustituirá el número de teléfono anterior.
+  - Si el nombre que se introdujo ya existe en la agenda y no se indica número de teléfono, se eliminará de la agenda la entrada correspondiente a ese nombre.
+
+
+
 
 
 
